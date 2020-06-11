@@ -4,7 +4,7 @@
   "description": "a react develop stack for pc management system",
   "repository": {
     "type": "git",
-    "url": "https://github.com/duxianwei520/react"
+    "url": "https://github.com/jimole775/stocks-web.git"
   },
   "private": true,
   "scripts": {
@@ -25,21 +25,7 @@
       "pre-commit": "lint-staged"
     }
   },
-  "author": "duxianwei",
-  "contributors": [
-    {
-      "name": "HanQ"
-    },
-    {
-      "name": "Huxiaoyu"
-    },
-    {
-      "name": "jinxedjkldsa"
-    },
-    {
-      "name": "FengYangLiu"
-    }
-  ],
+  "author": "rongxis",
   "jest": {
     "moduleFileExtensions": [
       "js",
