@@ -8,9 +8,12 @@ import { clearGformCache2 } from '@actions/common'
 
 const { SubMenu } = Menu
 
-@connect((state, props) => ({
-  config: state.config,
-}))
+@connect((state, props) => {
+  console.log(state, props)
+  return {
+    config: state.config,
+  }
+})
 export default class LeftNav extends Component {
   constructor(props, context) {
     super(props, context)
@@ -52,6 +55,7 @@ export default class LeftNav extends Component {
     */
     const { menu } = this.state
     const curPath = `${pathname.split('$')[0]}`.replace('/', '')
+    console.log(pathname, curPath, this.state)
     if (curPath === '') { // 如果是默认首页，那么就不用往下计算了
       this.setState({
         openKeys: ['sub1'],

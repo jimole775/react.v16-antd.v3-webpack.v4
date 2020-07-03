@@ -14,7 +14,7 @@ try {
   selfIp = 'localhost'
 }
 
-const PORT = 8888
+const PORT = 8081
 // 精确的获取本机ip地址
 function getIpAddress () {
   const interfaces = require('os').networkInterfaces
@@ -56,6 +56,9 @@ const webpackConfigDev = {
     hot: true, 
     host: selfIp,
     port: PORT,
+    proxy: {
+      '/api': 'http://localhost:9527'
+    }
   },
 }
 

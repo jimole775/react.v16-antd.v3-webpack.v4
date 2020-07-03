@@ -1,14 +1,12 @@
-
-const path = '/mock'
-
 // #region
-const base = require('./apis/base') // 基础的接口
-const userManage = require('./apis/sys/userManage') // 用户管理
-const roleManage = require('./apis/sys/roleManage') // 角色管理
-const moduleManage = require('./apis/sys/moduleManage') // 模块管理
+import base from './apis/base' // 基础的接口
+import userManage from './apis/sys/userManage' // 基础的接口
+import roleManage from './apis/sys/roleManage' // 基础的接口
+import moduleManage from './apis/sys/moduleManage' // 基础的接口
 // #endregion
 
-module.exports = {
+const path = '/mock'
+export default {
   // #region 收起所有
 
   // #region 公用

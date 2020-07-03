@@ -6,7 +6,10 @@ import { hot } from 'react-hot-loader/root'
 import '@config'
 import Routes from '@configs/router.config'
 import configure from '@middleware/configureStore'
+import axios from 'axios'
+import './mocks/index.js'
 
+axios.get('/api/kline', (res) => { console.log(res) })
 const HotRoutes = hot(Routes)
 const store = configure({ })
 ReactDOM.render(

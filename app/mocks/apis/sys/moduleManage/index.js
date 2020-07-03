@@ -1,16 +1,14 @@
-const fetchModuleList = require('./fetchModuleList')
-const fetchModuleDelete = require('../../success')
-const fetchModuleDetail = require('./fetchModuleDetail')
-const fetchChangeModuleStatus = require('../../success')
-const fetchModuleUpdateDetail = require('../../success')
-const fetchModuleAdd = require('../../success')
 
+import successmode from '../../success'
+import fetchModuleList from './fetchModuleList'
+import fetchModuleDetail from './fetchModuleDetail'
 
-module.exports = {
+// ['fetchModuleDelete', 'fetchChangeModuleStatus', 'fetchModuleUpdateDetail', 'fetchModuleAdd'] 
+export default {
   fetchModuleList,
-  fetchModuleDelete,
   fetchModuleDetail,
-  fetchChangeModuleStatus,
-  fetchModuleUpdateDetail,
-  fetchModuleAdd,
+  fetchModuleDelete: successmode,
+  fetchModuleAdd: successmode,
+  fetchChangeModuleStatus: successmode,
+  fetchModuleUpdateDetail: successmode,
 }

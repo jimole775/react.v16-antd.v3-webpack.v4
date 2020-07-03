@@ -1,5 +1,4 @@
-
-module.exports = {
+export default {
   data: {
     id: 2,
     resName: '基础信息',

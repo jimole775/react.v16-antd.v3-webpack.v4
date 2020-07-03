@@ -1,5 +1,5 @@
 
-module.exports = {
+export default {
   data: {
     ticket: 'ticket',
     token: '11111',

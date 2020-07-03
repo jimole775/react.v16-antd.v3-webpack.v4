@@ -73,8 +73,8 @@ export default class Index extends Component {
     } = this.props
     const { getFieldDecorator } = this.props.form
     const formItemLayout = {
-      labelCol: { span: 5 },
-      wrapperCol: { span: 17 },
+      labelCol: { span: 6 },
+      wrapperCol: { span: 18 },
     };
     (values.roleIds || []).map((item, index) => (values.roleIds.splice(index, 1, String(item))));
     return (

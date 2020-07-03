@@ -16,6 +16,7 @@ export default () => (
       {/** *菜单 开始 */}
       <Route path="/echarts" component={menu.echarts} />
       <Route path="/editor" component={menu.editor} />
+      <Route path="/test" component={sysSet.moduleManage} />
       {/** *菜单 结束 */}
       {/** *系统设置 开始 */}
       <Route path={`/${set}/userManage`} component={sysSet.userManage} />
